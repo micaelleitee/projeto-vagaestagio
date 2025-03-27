@@ -1,86 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro e listagem de produtos</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <span>CADASTRO</span>
-    <div id="container">
-      <section>
-        <form id="form">
-          <div id="fields">
-            <div class="input">
-              <label for="text">Nome do produto</label>
-              <input
-                type="text"
-                id="text-produto"
-                class="input-class"
-                placeholder="DIGITE AQUI"
-              />
-              <label for=""> Descrição do produto:</label>
-              <input
-                type="text"
-                id="desc-produto"
-                class="input-class"
-                placeholder="DIGITE A DESCRIÇÃO"
-              />
-              <label for="">Valor do produto:</label>
-              <input
-                type="number"
-                id="input-valor"
-                class="input-class"
-                placeholder="DIGITE O VALOR"
-              />
-              <div id="select-venda">
-                <label for="" class="label-venda">
-                  Disponível para venda:
-                </label>
-                <select
-                  name="test"
-                  id="selection-options"
-                  class="selection-class"
-                >
-                  <option value="1">SIM</option>
-                  <option value="0">NÃO</option>
-                </select>
-              </div>
-              <button class="button-class" type="submit">CADASTRAR</button>
-            </div>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro e listagem de produtos</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <strong>Cadastro</strong>
+  <section>
+    <form id="form">
+      <div id="fields">
+        <div class="input">
+          <label for="text">Nome do produto</label>
+          <input type="text" id="text-produto" class="input-class" placeholder="DIGITE AQUI" />
+          <label for=""> Descrição do produto:</label>
+          <input type="text" id="desc-produto" class="input-class" placeholder="DIGITE A DESCRIÇÃO" />
+          <label for="">Valor do produto:</label>
+          <input type="number" id="input-valor" class="input-class" placeholder="DIGITE O VALOR" />
+          <div id="select-venda">
+            <label for="" class="label-venda">
+              Disponível para venda:
+            </label>
+            <select name="test" id="selection-options" class="selection-class">
+              <option value="1">SIM</option>
+              <option value="0">NÃO</option>
+            </select>
           </div>
-        </form>
-        <div id="table">
-          <table>
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th>Valor</th>
-                <th>Disponível</th>
-                <th>Ações</th>
-              </tr>
-            </thead>
-            <tbody id="product-list">
-              <tr class="no-products">
-                <td colspan="4">Nenhum produto listado.</td>
-              </tr>
-            </tbody>
-          </table>
+          <button class="button-class" type="submit">Cadastrar</button>
         </div>
-      </section>
+      </div>
+    </form>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Disponível</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+          <tr class="no-products">
+            <td colspan="4">Nenhum produto listado.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </body>
-  <script src="JS/index.js"></script>
+  </section>
+</body>
+<script src="JS/index.js"></script>
+
 </html>

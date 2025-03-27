@@ -6,15 +6,6 @@
 
 :root {
   --font-family: "Inter", serif;
-  --blue-100: #080815;
-  --blue-200: #0e0f25;
-  --blue-300: #141534;
-  --blue-400: #1f2151;
-  --blue-500: #2f3279;
-  --blue-600: #2f34ab;
-  --blue-700: #4a5dcd;
-  --blue-800: #7d8dec;
-  --blue-900: #b2b8de;
   --white: #f1f2f6;
   --text-h1: 32px/48px bold;
   --text-button: 16px/20px var(--font-family);
@@ -23,27 +14,47 @@
 }
 
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: var(--blue-100);
+  background-color: #121214;
+  gap: 50px;
 }
 
 table {
   padding: 20px;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
   width: 100%;
   font-family: var(--font-family);
   color: white;
-  background-color: var(--blue-400);
+  overflow: auto;
 }
 
-span {
-  margin-top: 66px;
-  font-family: "Monomaniac One", serif;
-  color: var(--blue-700);
+strong {
+  font-family: "Inter", sans-serif;
+  color: white;
   font-size: 40px;
-  letter-spacing: 10px;
 }
+
+section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.table-container {
+  width: 800px;
+  height: 500px; 
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #8257e5;
+}
+
